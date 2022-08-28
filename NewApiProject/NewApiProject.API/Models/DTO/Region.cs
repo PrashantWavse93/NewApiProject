@@ -1,5 +1,6 @@
-﻿namespace NewApiProject.API.Models.Domain
+﻿namespace NewApiProject.API.Models.DTO
 {
+    //DTO (Data Transfer Object)
     public class Region
     {
         public Guid Id { get; set; }
@@ -9,8 +10,5 @@
         public double Lat { get; set; }
         public double Long { get; set; }
         public int Population { get; set; }
-
-        //Navigation Properties
-        public IEnumerable<Walk> Walks { get; set; }
     }
 }
